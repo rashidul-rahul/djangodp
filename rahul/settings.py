@@ -76,8 +76,12 @@ WSGI_APPLICATION = 'rahul.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'green_3bbq',
+        'USER': 'green_3bbq_user',
+        'PASSWORD': 'SuDThIlHKuMztGPbSZntBKmqK7E0q3N6',
+        'HOST': 'dpg-d1jbi9fdiees738s15cg-a',
+        'PORT': '5432'
     }
 }
 
@@ -120,7 +124,7 @@ STATIC_URL = 'static/'
 
 STATIC_ROOT = BASE_DIR / "staticfiles"
 
-MEDIA_URL = 'media'
+MEDIA_URL = 'media/'
 
 MEDIA_ROOT = BASE_DIR / 'media'
 
